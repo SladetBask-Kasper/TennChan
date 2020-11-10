@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>/{{ board_name }}/</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static './style.css' %}">
+	<link rel='icon' href="{% static './favicon.ico' %}" type='image/x-icon'/ >
+</head>
+<body>
+	<a href="/" class="back">&larr;Back</a>
+<center>
+	<header class="rounded">
+		<h1>Welcome to /{{ board_name }}/!</h1>
+	</header>
+	<div id=posts>{{ posts |safe }}</div>
+	<footer>
+		<br><h2><a href="/post/?q={{ board_name }}" id="postLink">Make a new post here!</a></h2>
+	</footer><br><br><br><br>
+</center>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pinned post for {{ board }}</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static './style.css' %}">
+	<link rel='icon' href="{% static './favicon.ico' %}" type='image/x-icon'/ >
+</head>
+<body>
+	<a href="/subboards/{{ board }}/">&larr;Back</a>
+	<center><header class="rounded">
+		<h1>Welcome to /{{ board }}/</h1>
+	</header></center><hr><br>
+	<h2 class="wrap" id="post_content">
+		{{ post_content }}
+	</h2>
+	<br><hr><br>
+	<h3 class="wrap">
+			Comments:<br>
+			{{ post_rules |safe }}
+	</h3>
+</body>
+</html>

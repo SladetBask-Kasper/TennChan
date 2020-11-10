@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TennChan</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static './style.css' %}">
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+	<style type="text/css">
+		a {
+			text-decoration: none;
+			color: #12233b;
+			font-size: 42px;
+		}
+
+	</style>
+</head>
+<body>
+	<center>
+		<header class="rounded2"><h1>Welcome to TennChan! You are our new pet!</h1></header>
+		<img src="{% static './images/elias.jpg' %}" id="leader"><br><hr><br>
+		{{ boards |safe }}
+	</center>
+</body>
+</html>

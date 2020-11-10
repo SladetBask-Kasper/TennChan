@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment on {op}'s post!</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static './style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static './textBox.css' %}">
+	<link rel='icon' href="{% static './favicon.ico' %}" type='image/x-icon'/ >
+</head>
+<body>
+	<center>
+		<header class="rounded2"><h1>Post a comment</h1></header>
+		<p class="faded">Note: All fields except image are required!</p><br>
+		<form action="/comment/" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+			<div class="g-recaptcha" data-sitekey="{{ SITE_KEY }}"></div>
+			<br><br><input id="submitboy" type="submit" value="Submit">
+		</form>
+	</center>
+</body>
+</html>

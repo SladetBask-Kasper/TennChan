@@ -1,0 +1,173 @@
+body {	
+	padding-right: 20%;
+	padding-left: 20%;
+}
+footer {
+	background-color: orange;
+	/*position: absolute;*/
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+}
+header {
+	margin-left: 35%;
+	margin-right: 35%;
+	color:#524420;
+	margin-bottom: 1cm;
+}
+@media only screen and (max-width: 800px) {
+	header {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	body {	
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+}
+#postLink {
+	color: #524420;
+	text-decoration: bold;
+}
+#posts {
+	margin-left: 0%;
+}
+.post {
+	font-size: 42px;
+	color:#12233b;
+	text-decoration: none;
+	text-decoration: bold;
+}
+.post_desc {
+	font-size: 18px;
+	color:#696969;
+	text-decoration: none;
+}
+hr {
+  border:none;
+  border-top:1px solid #e6e6e6;
+  color, background-color:#fff;
+  height:1px;
+  width:100%;
+}
+.wrap { 
+   overflow-wrap: break-word;
+   text-align: left;	
+}
+#post_content {
+	text-align: left;
+}
+.rounded {
+  border-radius: 8%;
+  background: orange;
+  border: 6px solid #cc9600;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.rounded2 {
+	border-radius: 20px;
+	background: orange;
+	border: 6px solid #cc9600;
+	color:#524420;
+	margin-bottom: 1cm;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+p {
+	/*line-height: 32px;   /* within paragraph */
+	margin-bottom: 5px; /* between paragraphs */
+	margin-top: 5px;
+}
+#commenSection {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+nickname {
+	color: #e07e7e;
+}
+.nickname {
+	color: #e07e7e;
+	text-decoration: none;
+}
+.op {
+	color: #517502;
+	text-decoration: none;
+}
+.commentPic {
+	float:left;
+	object-fit: cover;
+	padding-right: 15px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+.comment {
+	float:right;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /*width: 120px;*/
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+#leader {
+	border-radius: 50%;
+}
+.faded {
+	color:#737373;
+}
+.back {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #cc9600;
+}
